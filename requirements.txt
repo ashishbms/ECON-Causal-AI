@@ -1,0 +1,12 @@
+eurostat==1.1.1
+pytest==8.4.1
+pylint==3.3.7
+ipython==9.4.0
+black==25.1.0
+ipykernel
+fredapi
+yahoofinancials
+yfinance
+networkx
+pyvis
+neo4j

@@ -1,0 +1,15 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: econcausalai-graphdb
+    ports:
+      - "7474:7474" # For the Neo4j Browser UI
+      - "7687:7687" # For the Bolt driver (how Python connects)
+    volumes:
+      - ./data/graphdb:/data
+    environment:
+      - NEO4J_AUTH=neo4j/ECai@69420
